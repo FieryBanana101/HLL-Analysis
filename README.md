@@ -14,7 +14,9 @@ python3 HHL.py
 ```
 
 ## Directory Structure
-.
-├── HHL.py
-├── README.md
-└── requirements.txt
+.  
+├── docs  
+│   └── 13524004_Muhammad Fatih Irkham Mauludi_Makalah Algeo.pdf  
+├── HHL.py  
+├── README.md  
+└── requirements.txt  
