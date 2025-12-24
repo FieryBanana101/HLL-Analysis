@@ -128,7 +128,7 @@ if __name__ == "__main__":
         print(f"Actual Ratio (Gauss-Jordan Elimination): {actual_ratio} ({t2 - t1} ms)")
 
         try:
-            t1 = time.perf_counter_ns()
+            t1 = time.perf_counter()
 
             # Construct the quantum circuit and encoding scheme
             hhl_qc, qubits1, qubits2 = HHL(A_input, b_input)
@@ -148,7 +148,7 @@ if __name__ == "__main__":
             prob_x2 = counts[qubits2]
             approx_ratio = prob_x1**2 / prob_x2**2
 
-            t2 = time.perf_counter_ns()
+            t2 = time.perf_counter()
             print(f"Approximated Ratio (HHL Algorithm): {approx_ratio} ({t2 - t1} ms)\n\n")
 
         except AssertionError:
